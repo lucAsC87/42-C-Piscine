@@ -1,37 +1,28 @@
 #include <stdio.h>
 
-void    ft_sort_int_tab(int *tab, int size)
+void	ft_sort_int_tab(int *tab, int size)
 {
-    int    i;
-    int    new_tab[size];
+	int	i;
+	int	min;
+	int	max;
 
-    i = 0;
-    while (i < size)
-    {
-        new_tab[i] = tab[i];
-        
-        if (tab[i] < new_tab[0])
-        {
-		new_tab[i] = new_tab[0];
-		new_tab[0] = tab[i];
-		if (new_tab[i] < new_tab[i - 1])
-		{
-			new_tab[i] = new_tab[i - 1];
-			new_tab[i - 1] = tab[i];
-		}
-        }
-        i++;
-    }
-	
-    for (int i = 0; i < size; i++)
-    {
-    	printf("%i ", new_tab[i]);
-    }
-    printf("\n");
+	i = 0;
+	min = tab[i];
+	max = tab[size - 1];
+	while (i < size)
+	{
+		if (tab[i] < min)
+			min = tab[i];
+		if (tab[i] > max)
+			max = tab[i];
+		i++;
+	}
+
+	printf("MIN: %i MAX: %i\n", min, max);
 }
 
-int     main(void)
+int	main(void)
 {
-        int test[] = {44, 22, 33, 11};
-        ft_sort_int_tab(test, 4);
+	int test[] = {44, 22, 33, 11};
+	ft_sort_int_tab(test, 4);
 }

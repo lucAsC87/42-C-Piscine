@@ -10,8 +10,6 @@ int	*ft_range(int min, int max)
 	length = max - min;
 	if (min >= max)
 		return (NULL);
-	if (length < 0)
-		length *= -1;
 	range = (int *)malloc(length * sizeof(int));
 	while (min < max)
 	{

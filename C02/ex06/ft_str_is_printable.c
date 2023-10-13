@@ -6,7 +6,7 @@
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:20:08 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:20:10 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/09/12 14:54:24 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,5 @@ int	ft_str_is_printable(char *str)
 		else
 			return (0);
 	}
-	
 	return (1);
 }

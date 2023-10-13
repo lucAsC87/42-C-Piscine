@@ -6,7 +6,7 @@
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:20:19 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:20:20 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/09/12 14:53:34 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,5 @@ char	*ft_strupcase(char *str)
 		}
 		i++;
 	}
-
 	return (str);
 }

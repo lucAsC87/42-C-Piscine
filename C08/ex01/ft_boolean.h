@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_boolean.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 11:19:24 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/12 14:51:57 by lucavall         ###   ########.fr       */
+/*   Created: 2023/10/02 18:17:28 by lucavall          #+#    #+#             */
+/*   Updated: 2023/10/02 18:38:03 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_numeric(char *str)
-{
-	int	i;
+#ifndef FT_BOOLEAN_H
+#define FT_BOOLEAN_H
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 48 && str[i] <= 57)
-			i++;
-		else
-			return (0);
-	}
-	return (1);
-}
+#include <unistd.h>
+
+typedef enum a_bool{
+	false = 0,
+	true = 1,
+}	t_bool;
+
+#define FALSE false
+#define TRUE true
+#define	EVEN(number) (nbr % 2 == 0)
+#define EVEN_MSG "I have an even number of arguments.\n"
+#define ODD_MSG "I have an odd number of arguments.\n"
+#define SUCCESS 0
+#endif

@@ -6,22 +6,20 @@
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:18:58 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:19:01 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/09/12 14:46:24 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
-	
+
 	i = 0;
 	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
-
 	dest[i] = '\0';
-
 	return (dest);
 }

@@ -6,21 +6,21 @@
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:19:16 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:19:17 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/09/12 14:51:12 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_alpha(char *str)
 {
-	int 	i;
+	int	i;
 
+	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str[i] >=  65 && str[i] <= 90) || (str[i] >= 97 && str[i] <= 122))
+		if ((str[i] >= 65 && str[i] <= 90) || (str[i] >= 97 && str[i] <= 122))
 			i++;
 		else
 			return (0);
 	}
-	
 	return (1);
 }

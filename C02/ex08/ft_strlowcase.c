@@ -6,11 +6,11 @@
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:20:40 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:20:41 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/09/12 14:53:54 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_strlowcase(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int	i;
 
@@ -23,6 +23,5 @@ char	ft_strlowcase(char *str)
 		}
 		i++;
 	}
-
 	return (str);
 }

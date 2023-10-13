@@ -6,7 +6,7 @@
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:19:42 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:19:44 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/09/12 14:52:17 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,5 @@ int	ft_str_is_lowercase(char *str)
 		else
 			return (0);
 	}
-
 	return (1);
 }

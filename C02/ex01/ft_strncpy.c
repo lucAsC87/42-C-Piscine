@@ -6,21 +6,19 @@
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:19:07 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:19:10 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/09/12 14:46:44 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while (i < n && src[i] != '\0')
+	while (i < n)
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
-
 	return (dest);
 }

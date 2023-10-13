@@ -6,19 +6,18 @@
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:21:31 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:21:32 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/10/04 18:31:54 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while ((s1[i] == s2[i]) && (s1[i] != '\0') && (n > 0))
-	{
+	if (n <= 0)
+		return (0);
+	while ((i < n - 1) && (s1[i] == s2[i]) && (s1[i] != '\0'))
 		i++;
-		n--;
-	}
-	return s1[i] - s2[i];
+	return (s1[i] - s2[i]);
 }

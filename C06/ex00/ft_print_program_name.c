@@ -6,7 +6,7 @@
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:24:07 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:24:09 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/10/18 00:05:42 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,15 @@
 int	main(int argc, char *argv[])
 {
 	int	i;
-
+	
 	i = 0;
-	while (argv[argc - 1][i] != '\0')
+	if (argc > 0)
 	{
-		write(1, &argv[argc - 1][i], 1);
-		i++;
+		while (argv[0][i] != '\0')
+		{
+			write(1, &argv[0][i], 1);
+			i++;
+		}
 	}
 	write(1, "\n", 1);
 }

@@ -6,7 +6,7 @@
 /*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:22:37 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:22:41 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:45:23 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_atoi(char *str)
 	i = 0;
 	minus = 0;
 	number = 0;
-	while ((str[i] >= 9 && str[i] <= 13)  || str[i] == 32)
+	while ((str[i] >= 7 && str[i] <= 13)  || str[i] == 32)
 		i++;
 	while (str[i] == 43 || str[i] == 45)
 	{

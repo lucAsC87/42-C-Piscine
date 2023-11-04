@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lucavall <lucavall@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:22:37 by lucavall          #+#    #+#             */
-/*   Updated: 2023/10/17 16:45:23 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/11/04 14:53:26 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_atoi(char *str)
 	i = 0;
 	minus = 0;
 	number = 0;
-	while ((str[i] >= 7 && str[i] <= 13)  || str[i] == 32)
+	while ((str[i] >= 7 && str[i] <= 13) || str[i] == 32)
 		i++;
 	while (str[i] == 43 || str[i] == 45)
 	{
@@ -27,7 +27,7 @@ int	ft_atoi(char *str)
 			minus++;
 		i++;
 	}
-	while  (str[i] >= 48 && str[i] <= 57)
+	while (str[i] >= 48 && str[i] <= 57)
 	{
 		number *= 10;
 		number += str[i] - 48;
@@ -35,5 +35,5 @@ int	ft_atoi(char *str)
 	}
 	if (minus % 2 != 0)
 		number *= -1;
-	return number;
+	return (number);
 }

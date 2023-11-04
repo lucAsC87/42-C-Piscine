@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lucavall <lucavall@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 10:54:55 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/12 14:20:38 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/11/04 15:00:19 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putnbr(int nb)
 {
 	char		number[10];
-	int		i;
+	int			i;
 	long int	num;
 
 	i = 0;

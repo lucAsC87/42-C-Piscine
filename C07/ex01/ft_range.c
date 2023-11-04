@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lucavall <lucavall@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:25:17 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:25:20 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/11/04 14:59:18 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	*ft_range(int min, int max)
 	int	i;
 	int	length;
 	int	*range;
-	
+
 	i = 0;
 	length = max - min;
 	if (min >= max)
@@ -29,6 +29,5 @@ int	*ft_range(int min, int max)
 		min++;
 		i++;
 	}
-	
 	return (range);
 }

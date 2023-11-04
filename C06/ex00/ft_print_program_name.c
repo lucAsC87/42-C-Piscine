@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lucavall <lucavall@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:24:07 by lucavall          #+#    #+#             */
-/*   Updated: 2023/10/18 00:05:42 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/11/04 15:06:35 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	main(int argc, char *argv[])
 {
 	int	i;
-	
+
 	i = 0;
 	if (argc > 0)
 	{

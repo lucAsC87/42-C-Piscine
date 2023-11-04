@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lucavall <lucavall@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:21:21 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:21:22 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/11/04 14:52:15 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@ int	ft_strcmp(char *s1, char *s2)
 	i = 0;
 	while ((s1[i] == s2[i]) && (s1[i] != '\0'))
 		i++;
-	return s1[i] - s2[i];
+	return (s1[i] - s2[i]);
 }

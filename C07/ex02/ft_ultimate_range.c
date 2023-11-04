@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lucavall <lucavall@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:25:44 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:25:47 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/11/04 14:59:47 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	int	i;
 	int	length;
 	int	*copy;
-	
+
 	if (min >= max)
 	{
 		*range = NULL;
@@ -38,6 +38,5 @@ int	ft_ultimate_range(int **range, int min, int max)
 		min++;
 		i++;
 	}
-
 	return (i);
 }

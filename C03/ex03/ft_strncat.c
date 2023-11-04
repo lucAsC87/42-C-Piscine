@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucavall <lucavall@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lucavall <lucavall@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 11:21:51 by lucavall          #+#    #+#             */
-/*   Updated: 2023/09/11 11:21:53 by lucavall         ###   ########.fr       */
+/*   Updated: 2023/11/04 15:06:55 by lucavall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	int	i;
 	int	j;
-	
+
 	i = 0;
 	j = 0;
 	while (dest[i] != '\0')

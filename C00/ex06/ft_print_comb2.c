@@ -12,51 +12,31 @@
 
 #include <unistd.h>
 
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 void	ft_print_comb2(void)
 {
 	int	i;
 	int	j;
-	int	k;
-	int	x;
 
-	i = 48;
-	j = 48;
-	k = 48;
-	x = 49;
-	while (i <= 57)
+	i = 0;
+	while (i <= 98)
 	{
-		while (j <= 57)
+		j = i + 1;
+		while (j <= 99)
 		{
-			while (k <= 57)
-			{
-				while (x <= 57)
-				{
-					write(1, &i, 1);
-					write(1, &j, 1);
-					write(1, " ", 1);
-					write(1, &k, 1);
-					write(1, &x, 1);
-					x++;
-					if (i < 57 || j < 56)
-						write(1, ", ", 2);
-				}
-				k++;
-				if (x > 57)
-					x = 48;
-			}
+			ft_putchar(i / 10 + '0');
+			ft_putchar(i % 10 + '0');
+			ft_putchar(' ');
+			ft_putchar(j / 10 + '0');
+			ft_putchar(j % 10 + '0');
+			if (i != 98)
+				write(1, ", ", 2);
 			j++;
-			if (k > 57)
-			{
-				k = i;
-				x = j + 1;
-			}
 		}
 		i++;
-		if (j > 56)
-		{
-			j = 48;
-			k = i;
-			x = j + 1;
-		}
 	}
 }

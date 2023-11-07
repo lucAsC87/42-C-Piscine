@@ -19,12 +19,12 @@ void	ft_print_comb(void)
 	int	x;
 
 	i = 48;
-	j = 49;
-	x = 50;
 	while (i <= 55)
 	{
+		j = i + 1;
 		while (j <= 56)
 		{
+			x = j + 1;
 			while (x <= 57)
 			{
 				write(1, &i, 1);
@@ -38,7 +38,5 @@ void	ft_print_comb(void)
 			x = j + 1;
 		}
 		i++;
-		j = i + 1;
-		x = j + 1;
 	}
 }
